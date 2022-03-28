@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+h1,
+h2 {
+    color: #909090;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+i {
+    color: #e76f51;
+}
+
+
+/* HEADER */
+
+.header {
+    background-color: #f8e1db;
+    padding: 15px 50px;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: #000000;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    color: #ff0000;
+    transition: all 0.3s;
+}
+
+
+/* CAROUSEL */
+
+.carousel {
+    padding-top: 50%;
+    background: url(../img/BG.png) center center no-repeat;
+    background-size: cover;
+}
+
+
+/* DESTINATION */
+
+.destination {
+    background-color: #faf4f2;
+    padding: 50px 10px;
+}
+
+.destination__title {
+    text-align: center;
+    font-size: 22px;
+}
+
+.destination .row .col {
+    width: 25%;
+    float: left;
+}
+
+.destination .item {
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    margin: 30px 10px;
+}
+
+.destination .item__img {
+    position: relative;
+}
+
+.destination .item__img img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.destination .item__img .btn-heart {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 25%;
+    border-color: transparent;
+}
+
+.destination .item__detail h2 {
+    color: #000000;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.destination .item__detail p {
+    color: #ababab;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.destination .item__detail .btn-read-more {
+    background-color: #e8e8e8;
+    color: #ababab;
+    padding: 10px 0;
+    width: 150px;
+    display: inline-block;
+    border-radius: 100px;
+    font-weight: 700;
+}
+
+.destination .item__detail .btn-read-more:hover {
+    background-color: #f8e1db;
+    /* color: #000000; */
+}
+
+.destination .view-all {
+    text-align: center;
+}
+
+.destination .btn-view-all {
+    background-color: #ffffff;
+    color: #ed9984;
+    padding: 10px 50px;
+    border: 1px solid #ed9984;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.destination .btn-view-all:hover {
+    background-color: #ed9984;
+    color: #ffffff;
+    padding: 10px 50px;
+    border: 1px solid #ed9984;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+
+/* CONTACT */
+
+.contact {
+    background: url(../img/mask.png) center center / cover no-repeat;
+    background-color: #f8e1db;
+}
+
+.contact__content {
+    padding: 50px;
+    position: relative;
+    height: 400px;
+}
+
+.contact__info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.contact__info h1 {
+    text-align: left;
+}
+
+.contact__info h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contact__info p {
+    margin: 10px 0;
+    color: #ababab;
+    font-size: 16px;
+}
+
+.contact__download,
+.contact__follow {
+    float: left;
+}
+
+.contact__follow i {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #ffffff;
+}
+
+.footer__content {
+    background-color: #f8e1db;
+    margin-top: 70px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 50px;
+}
+
+.footer__items h2 {
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__items p,
+ul li a {
+    color: #000000;
+    font-size: 16px;
+    line-height: 25px;
+    line-height: 30px;
+}
+
+.footer__items ul li a:hover {
+    color: #ff0000;
+    transition: all 0.3s;
+}
+
+.footer__hipcamp,
+.footer__let-us,
+.footer__plan {
+    float: left;
+    width: 20%;
+}
+
+.footer__hipcamp {
+    width: 40%;
+    padding-right: 20px;
+}
+
+.footer__copy-right {
+    margin-top: 20px;
+    text-align: center;
+    color: #000000;
+    font-size: 16px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and ( max-width: 992px) {
+    .destination .row .col {
+        width: 50%;
+    }
+    .footer__hipcamp {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer__let-us,
+    .footer__plan {
+        width: 33.3333%;
+    }
+}
+
+@media screen and ( max-width: 768px) {
+    .footer__hipcamp {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact__info {
+        width: 80%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and ( max-width: 576px) {
+    .destination .row .col {
+        width: 100%;
+    }
+    .footer__let-us,
+    .footer__plan {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact__content>img {
+        width: 100%;
+    }
+}
